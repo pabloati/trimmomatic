@@ -28,6 +28,7 @@ trimmomatic
 */
 
 process trimmomatic {
+
     publishDir params.resultsDir, mode: params.saveMode
     container 'quay.io/biocontainers/trimmomatic:0.35--6'
 
